@@ -19,6 +19,14 @@ public class StudentService {
         studyGroup.addStudent(student);
     }
 
+    public void sortByName(){
+        studyGroup.sortByName();
+    }
+
+    public void sortByAge(){
+        studyGroup.sortByAge();
+    }
+
     public String getStudentListInfo(){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("List of students:\n");
