@@ -2,14 +2,14 @@ package org.example.seminar.study_group;
 
 import java.util.*;
 
-public class StudyGroup implements Iterable<Student>{
-    private List<Student> students;
+public class StudyGroup<E extends StudyGroupItem<E>> implements Iterable<E>{
+    private List<E> students;
 
     public StudyGroup() {
         students = new ArrayList<>();
     }
 
-    public void addStudent(Student student){
+    public void addStudent(E student){
         students.add(student);
     }
 
@@ -18,7 +18,7 @@ public class StudyGroup implements Iterable<Student>{
     }
 
     public void sortByAge(){
-        Collections.sort(students, new StudentComparatorByAge());
+        Collections.sort(students, new StudentComparatorByAge<>());
 
 //        Collections.sort(students, new Comparator<Student>() {
 //            @Override
@@ -33,7 +33,7 @@ public class StudyGroup implements Iterable<Student>{
     }
 
     @Override
-    public Iterator<Student> iterator() {
-        return new StudentIterator(students);
+    public Iterator<E> iterator() {
+        return new StudentIterator<>(students);
     }
 }

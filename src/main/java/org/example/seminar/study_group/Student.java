@@ -1,6 +1,6 @@
 package org.example.seminar.study_group;
 
-public class Student implements Comparable<Student> {
+public class Student implements StudyGroupItem<Student> {
     private int id;
     private String name;
     private int age;
@@ -13,6 +13,7 @@ public class Student implements Comparable<Student> {
         this.age = age;
     }
 
+    @Override
     public int getAge() {
         return age;
     }

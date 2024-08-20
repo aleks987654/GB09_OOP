@@ -3,11 +3,11 @@ package org.example.seminar.study_group;
 import java.util.Iterator;
 import java.util.List;
 
-class StudentIterator implements Iterator<Student> {
+class StudentIterator<T> implements Iterator<T> {
     private int curIndex;
-    private List<Student> students;
+    private List<T> students;
 
-    public StudentIterator(List<Student> students) {
+    public StudentIterator(List<T> students) {
         this.students = students;
     }
 
@@ -17,7 +17,7 @@ class StudentIterator implements Iterator<Student> {
     }
 
     @Override
-    public Student next() {
+    public T next() {
         return students.get(curIndex++);
     }
 }

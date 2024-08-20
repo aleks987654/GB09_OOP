@@ -3,7 +3,7 @@ package org.example.seminar.study_group;
 import java.util.Iterator;
 
 public class StudentService {
-    private StudyGroup studyGroup;
+    private StudyGroup<Student> studyGroup;
     private StudentBuilder builder;
 
     public StudentService() {
