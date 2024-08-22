@@ -1,4 +1,4 @@
-package org.example.seminar.study_group;
+package org.example.seminar.study_group.model;
 
 public class StudentBuilder {
     private int genId;

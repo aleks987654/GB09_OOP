@@ -1,4 +1,4 @@
-package org.example.seminar.study_group;
+package org.example.seminar.study_group.model;
 
 public class Student implements StudyGroupItem<Student> {
     private int id;

@@ -1,4 +1,4 @@
-package org.example.seminar.study_group;
+package org.example.seminar.study_group.model;
 
 import java.util.*;
 

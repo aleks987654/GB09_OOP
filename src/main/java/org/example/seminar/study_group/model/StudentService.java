@@ -1,6 +1,4 @@
-package org.example.seminar.study_group;
-
-import java.util.Iterator;
+package org.example.seminar.study_group.model;
 
 public class StudentService {
     private StudyGroup<Student> studyGroup;
